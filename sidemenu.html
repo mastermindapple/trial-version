@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <style>
+            body{
+                padding: 0px;
+            }
+
+            .container{
+              background-color: lightblue;
+              font-size: 70px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .container div{
+                border: 3px #ccc solid;
+                height: 160px;
+                width: 100%;
+                font-family: Arial;
+            }
+            .workouts{
+                flex: 1;
+                transition: 0.6s;
+            }
+            .profile{
+                flex:1;
+            }
+            .profile{
+                transition: 0.6s;
+            }
+            .profile-content{
+                text-decoration: none;
+                color: blue;
+            }
+            .content{
+                color: blue;
+                text-decoration: none;
+            }
+            .workouts:hover{
+                background-color: lightgoldenrodyellow;
+                cursor: pointer;
+            }
+            .profile:hover{
+                background-color: lightgoldenrodyellow;
+                cursor: pointer;
+            }
+            .stats{
+                transition: 0.6s;
+            }
+            .stats-content{
+                color: blue;
+                text-decoration: none;
+            }
+            .stats:hover{
+                background-color: lightgoldenrodyellow;
+                cursor: pointer;
+            }
+
+            .settings{
+                transition: 0.6s;
+            }
+            .settings-content{
+                color: blue;
+                text-decoration: none;
+            }
+            .settings:hover{
+                background-color: lightgoldenrodyellow;
+                cursor: pointer;
+            }
+            
+            .acheivements{
+                transition: 0.6s;
+            }
+            .acheivements-content{
+                color: blue;
+                text-decoration: none;
+            }
+            .acheivements:hover{
+                background-color: lightgoldenrodyellow;
+                cursor: pointer;
+            }
+            
+
+        </style>    
+    </head>
+    <body>
+        <div class="container">
+            <center>
+            <div class="workouts">
+                <a class="content" href="">
+              Workouts
+                </a>
+            </div>
+            <div class="profile">
+                <a class="profile-content" href="">
+              Profile
+                </a>
+            </div>
+            <div class="stats">
+                <a class="stats-content" href="">
+            Stats
+                </a>
+            </div>
+            <div class="acheivements">
+                <a class="acheivements-content" href="">
+          Acheivements
+                </a>
+            </div>
+            <div class="settings">
+                <a class="settings-content" href="">
+            Settings
+                </a>
+            </div>
+            </center>
+        </div>
+    </body>
+</html>

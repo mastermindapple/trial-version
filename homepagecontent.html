@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: orange;
+            }
+            #name-para{
+                color: white;
+                font-size: 100px;
+                font-family: Arial;
+            }
+            /*
+            .account-display{
+                float: right;
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                background-color: orchid;
+                transform: translate(-70px,100px);
+                text-align: center;
+            }
+            #account-disp{
+                color: white;
+                transform: translateX(15px) translateY(20px);
+                font-size: 15px;
+                visibility: hidden;
+                transition: 0.6s;
+                z-index: 1;
+            }
+            */
+            .action-container{
+                display: flex;
+                
+            }
+            
+            .start-workout{
+                padding: 30px;
+                font-size: 40px;
+                flex: 1;
+            }
+            .something{
+                padding: 30px;
+                font-size: 40px;
+                flex: 1;
+            }
+            .workout-start{
+                background-color: aqua;
+                border: 1px solid grey;
+                width: 500px;
+            }
+            .something-else{
+                background-color: aqua;
+                border: 1px solid grey;
+                width: 500px;
+            }
+            .something{
+                text-decoration: none;
+                color: red;
+                font-family: Arial;
+            }
+
+            .start-workout{
+                text-decoration: none;
+                color: red;
+                font-family: Arial;
+            }
+            .workout-start:hover{
+                background-color: purple;
+                transition: 0.3s;
+            }
+            .something-else:hover{
+                background-color: purple;
+                transition: 0.3s;  
+            }
+            .sign-out{
+                background-color: aqua;
+                width: 500px;
+                height: 100px;
+                margin-top: 40px;
+            }
+            #sign-out-link{
+                font-size: 50px;
+                text-decoration: none;
+                color: red;
+                font-family: Arial;
+            }
+            .sign-out:hover{
+                transition: 0.3s;
+                background-color: red;
+                
+            }
+            .sign-out:hover #sign-out-link{
+                color: blue;
+            }
+        </style>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+// Your web app's Firebase configuration
+var firebaseConfig = {
+apiKey: "AIzaSyBY6AtBF43O9cPzQI_lNgSavrDmK7lskME",
+authDomain: "workout-664b7.firebaseapp.com",
+databaseURL: "https://workout-664b7.firebaseio.com",
+projectId: "workout-664b7",
+storageBucket: "workout-664b7.appspot.com",
+messagingSenderId: "168722182846",
+appId: "1:168722182846:web:b57fe2f1c601872d6aa4ef"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+</script>
+    </head>
+    <body>
+        <!--
+        <div class="account-display">
+            <span id="account-disp"></span>
+        </div>
+    -->
+        <center>
+            <div class="name-container">
+                <p id="name-para">
+                    
+                </p>
+            </div>
+            <div class="action-container">
+                <div class="workout-start">
+                    <a href="#" class="start-workout">
+                    Start a Workout
+                    </a>
+                </div>
+                <div class="something-else">
+                    <a href="#" class="something">
+                    Lorem ipsum dolor sit amet.
+                    </a>
+                </div>
+                </div>
+                <div class="sign-out" id="sign-out">
+                    <a href="" id="sign-out-link">
+                        Sign Out
+                    </a>
+            </div>
+        </center>
+        <script src="homepage.js"></script>
+    </body>
+</html>
